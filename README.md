@@ -107,17 +107,6 @@ Work through the cases in order — each one introduces a concept that later cas
 
 ---
 
-## Key dependencies
-
-| Package | Used in |
-|---------|---------|
-| `k8s.io/client-go` | All cases |
-| `k8s.io/api` | All cases |
-| `k8s.io/apimachinery` | All cases |
-| `sigs.k8s.io/controller-runtime` | Case 19 (envtest) |
-
----
-
 ## References
 
 - [client-go official examples](https://github.com/kubernetes/client-go/tree/master/examples)

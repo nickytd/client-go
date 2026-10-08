@@ -1,5 +1,9 @@
 # client-go Learning Lab
 
+[![CI](https://github.com/nickytd/client-go/actions/workflows/ci.yml/badge.svg)](https://github.com/nickytd/client-go/actions/workflows/ci.yml)
+[![Go Version](https://img.shields.io/badge/go-1.27.1-00ADD8?logo=go&logoColor=white)](https://go.dev/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
+
 A hands-on workspace for deeply learning [`kubernetes/client-go`](https://github.com/kubernetes/client-go).
 Each top-level folder is an independent Go module with a focused, runnable example that builds on the previous one.
 

@@ -1,0 +1,62 @@
+# A multi-version CRD serving both v1alpha1 and v1.
+#
+# This manifest is OPTIONAL for the case: the main.go demo converts entirely
+# in-process and needs no cluster. It is included to show how the same two
+# versions are declared to the API server.
+#
+# NOTE: with strategy "None" the API server does NOT convert the spec between
+# versions — it only rewrites apiVersion/kind, so the stored shape is served
+# verbatim under both names. True server-side spec conversion requires a
+# conversion webhook (strategy: Webhook), which this case deliberately avoids.
+# The in-process conversion in main.go is the real subject here.
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: widgets.example.com
+spec:
+  group: example.com
+  names:
+    plural: widgets
+    singular: widget
+    kind: Widget
+    shortNames:
+      - wd
+  scope: Namespaced
+  conversion:
+    strategy: None
+  versions:
+    - name: v1alpha1
+      served: true
+      storage: false
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                color:
+                  type: string
+                size:
+                  type: integer
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                color:
+                  type: string
+                dimensions:
+                  type: object
+                  properties:
+                    width:
+                      type: integer
+                    height:
+                      type: integer
+                material:
+                  type: string

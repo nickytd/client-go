@@ -7,6 +7,9 @@
 A hands-on workspace for deeply learning [`kubernetes/client-go`](https://github.com/kubernetes/client-go).
 Each top-level folder is an independent Go module with a focused, runnable example that builds on the previous one.
 
+> **Next step**: Once comfortable with these primitives, move on to the companion repo
+> [`controller-runtime` Learning Lab](https://github.com/nickytd/controller-runtime), which builds on them.
+
 ---
 
 ## Quick start
@@ -118,6 +121,7 @@ Work through the cases in order — each one introduces a concept that later cas
 - [Programming Kubernetes (O'Reilly)](https://www.oreilly.com/library/view/programming-kubernetes/9781492047094/)
 - [Kubernetes API conventions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md)
 - [controller-runtime docs](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
+- [companion: controller-runtime Learning Lab](https://github.com/nickytd/controller-runtime)
 
 ---
 

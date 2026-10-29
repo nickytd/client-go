@@ -1,6 +1,6 @@
 module github.com/home-lab/client-go/13-typed-crd-with-version
 
-go 1.27.1
+go 1.27.3
 
 require k8s.io/apimachinery v0.37.1
 

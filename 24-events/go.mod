@@ -1,11 +1,11 @@
 module github.com/home-lab/client-go/24-events
 
-go 1.27.1
+go 1.27.3
 
 require (
-	k8s.io/api v0.37.1
-	k8s.io/apimachinery v0.37.1
-	k8s.io/client-go v0.37.1
+	k8s.io/api v0.37.2
+	k8s.io/apimachinery v0.37.2
+	k8s.io/client-go v0.37.2
 	k8s.io/klog/v2 v2.140.0
 )
 

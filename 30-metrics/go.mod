@@ -1,10 +1,10 @@
 module github.com/home-lab/client-go/30-metrics
 
-go 1.27.1
+go 1.27.3
 
 require (
 	github.com/prometheus/client_golang v1.20.5
-	k8s.io/client-go v0.37.1
+	k8s.io/client-go v0.37.2
 )
 
 require (
@@ -19,7 +19,7 @@ require (
 	golang.org/x/sys v0.47.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
 	google.golang.org/protobuf v1.36.12-0.20260120151049-f2248ac996af // indirect
-	k8s.io/apimachinery v0.37.1 // indirect
+	k8s.io/apimachinery v0.37.2 // indirect
 	k8s.io/klog/v2 v2.140.0 // indirect
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd // indirect
 )

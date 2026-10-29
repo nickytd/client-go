@@ -1,12 +1,12 @@
 module github.com/home-lab/client-go/15-patch
 
-go 1.27.1
+go 1.27.3
 
 require (
 	github.com/kr/pretty v0.3.1
-	k8s.io/api v0.37.1
-	k8s.io/apimachinery v0.37.1
-	k8s.io/client-go v0.37.1
+	k8s.io/api v0.37.2
+	k8s.io/apimachinery v0.37.2
+	k8s.io/client-go v0.37.2
 )
 
 require (
